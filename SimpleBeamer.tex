@@ -1,0 +1,97 @@
+\documentclass[a4paper,10pt]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage{color}
+\usepackage{colortbl}
+\usepackage{xcolor}
+\usepackage{caption}
+\usepackage{ragged2e}
+\renewcommand{\figurename}{Figura}
+
+\usetheme{Warsaw}
+
+\begin{document}
+
+\begin{frame}
+\title{Mi primera presentaci\'on con Beamer}
+\author{Tu nombre ac\'a}
+\date{}
+\maketitle
+\end{frame}
+
+\section[\'Indice]{}
+\frame{
+
+\Large{\'Indice}
+
+\tableofcontents
+
+}
+
+\section{Introducci\'on}
+\begin{frame}{Introducci\'on}
+\justify
+Beamer es una clase de LaTeX para la creaci\'on de
+presentaciones.
+
+\vspace{0.3cm}
+\begin{justify}
+Funciona con pdflatex, dvips y LyX. El nombre 
+viene del vocablo alem\'an "beamer", un pseudo-anglicismo 
+que significa videoproyector. 
+
+\vspace{0.3cm}
+
+Al estar basado en LaTeX, Beamer es especialmente 
+\'util para preparar presentaciones en las que es 
+necesario mostrar gran cantidad de expresiones
+matem\'aticas,  el fuerte de dicho sistema de maquetaci\'on.
+\end{justify}
+
+\end{frame}
+
+\section{Tabla y Ecuaci\'on}
+\begin{frame}{Tabla y ecuaci\'on}
+
+
+  
+\begin{enumerate}
+ \item Tabla Simple
+ 
+\begin{center}
+ \begin{tabular}{l c r } 
+	    1 & 2 & 3 %
+	    \\ 4 & 5 & 6  %
+	    \\ 7 & 8 & 9 \\ %
+\end{tabular}
+\end{center}
+
+ \item Tres formas de crear ecuaciones
+
+\begin{equation}
+E = mc^2
+\end{equation}
+
+$$
+x^2 + y^2 = z^2
+$$
+
+\[ x^n + y^n = z^n \]
+\end{enumerate}
+
+
+\end{frame}
+
+\section{Imagen}
+\begin{frame}{Im\'agenes}
+\begin{figure}[h]
+ \centering 
+ \includegraphics[width=0.8\textwidth]{1}
+ \captionsetup[figura]{name=Figura}
+ \caption{Bonito Museo}
+\end{figure}
+
+\end{frame}
+
+
+
+\end{document}
