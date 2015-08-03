@@ -1,7 +1,7 @@
 # Presentación simple utilizando Beamer en LaTeX
 
 
-[![PDF Status](https://www.sharelatex.com/github/repos/FavioVazquez/Presentacion_Beamer_Simple/builds/latest/badge.svg)](https://www.sharelatex.com/github/repos/FavioVazquez/Presentacion_Beamer_Simple/builds/latest/output.pdf)
+[![PDF Status](https://www.sharelatex.com/github/repos/FavioVazquez/Presentacion_Beamer_Simple/builds/latest/badge.svg)](https://www.sharelatex.com/github/repos/FavioVazquez/Presentacion_Beamer_Simple/builds/latest/output.pdf) &#10140; Acá puedes ver el PDF compilado de SimpleBeamer.
 
 Esta es una pequeña presentación hecha en Beamer, con LaTeX. La hago como una simple prueba para que puedan clonarla y a partir de ahí construir sus presentaciones.
 
