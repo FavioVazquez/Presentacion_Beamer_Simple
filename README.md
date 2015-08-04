@@ -5,13 +5,13 @@
 
 Esta es una pequeña presentación hecha en Beamer, con LaTeX. La hago como una simple prueba para que puedan clonarla y a partir de ahí construir sus presentaciones.
 
-**Nota** = Asumiré algún conocimiento básico de LaTeX del lector, y esta noes una guía completa de Beamer, es solo un tutorial y ejemplo simple, para más información pueden buscar en la Web. Particularmente este repositorio lo he hechoenespañol debido a que no siempre es fácil encontrar información y ejemplos de Beamer en español, y en inglés ya hay mucho escrito.
+**Nota** = Asumiré algún conocimiento básico de LaTeX del lector, y esta no es una guía completa de Beamer, es solo un tutorial y ejemplo simple, para más información pueden buscar en la Web. Particularmente este repositorio lo he hecho en español debido a que no siempre es fácil encontrar información y ejemplos de Beamer en español, y en inglés ya hay mucho escrito.
 
 ------------
 
 Esta presentación la he construido utilizando la herramienta Kile de KDE para Windows. Por lo tanto se debe instalar antes MikTeX (utilicé la versión 2.9). Deben asegurarse que tienen instalado el paquete de Beamer en MikTeX o de lo contrario no compilará el archivo.
 
-Pueden descargar el motor de LaTeX MiKTeX desde el siguiente link y seguir los pasos de instalación:
+Pueden descargar el motor de LaTeX, MiKTeX, desde el siguiente link y seguir los pasos de instalación:
 
 http://miktex.org/download
 
@@ -21,7 +21,7 @@ Y utilizando el Package Manager (Manejador de paquetes) de MikTex pueden instala
 
 #SimpleBeamer.tex
 
-El primer archivo es muy simple, y solo muestra algunas funcionalidades simples de Beamer. Si deseas ver un PDF compilado de SimpleBeamer.tex puedes hacerlo aquí [![PDF Status](https://www.sharelatex.com/github/repos/FavioVazquez/Presentacion_Beamer_Simple/builds/latest/badge.svg)](https://www.sharelatex.com/github/repos/FavioVazquez/Presentacion_Beamer_Simple/builds/latest/output.pdf)
+El archivo es muy simple, y solo muestra algunas funcionalidades simples de Beamer. Si deseas ver un PDF compilado de SimpleBeamer.tex puedes hacerlo aquí [![PDF Status](https://www.sharelatex.com/github/repos/FavioVazquez/Presentacion_Beamer_Simple/builds/latest/badge.svg)](https://www.sharelatex.com/github/repos/FavioVazquez/Presentacion_Beamer_Simple/builds/latest/output.pdf)
 
 Las presentaciones hechas en Beamer comienzan diciéndole al compilador que la clase de documento que realizaremos es Beamer, este comando también recibe el tipo de papel y el tamaño de la letra a utilizar:
 
@@ -29,7 +29,7 @@ Las presentaciones hechas en Beamer comienzan diciéndole al compilador que la c
 \documentclass[a4paper,10pt]{beamer}
 ```
 
-Luego se llaman a los paquetes que utilizaremos para renderizar y mejorar la forma y estructura de nuestra presentación, particularmente en SimpleBeamer.tex utilicé:
+Luego se llaman a los paquetes que utilizaremos para renderizar, mejorar la forma y estructura de nuestra presentación, particularmente en SimpleBeamer.tex utilicé:
 
 ```latex
 \usepackage[utf8]{inputenc}
@@ -40,7 +40,7 @@ Luego se llaman a los paquetes que utilizaremos para renderizar y mejorar la for
 \usepackage{ragged2e}
 ```
 
-La explicación de cada paquete y sus funcionalidades pueden encontrarse fácilmente en la Web. Existen muchos temas de Beamer, algunos preinstalados con el paquete y algunos que pueden descargarse desde repositorios con plantillas, uno de los temas más populares es [Warsaw](http://deic.uab.es/~iblanes/beamer_gallery/individual/Warsaw-default-default.html), que es el que usé para crear SimpleBeamer. 
+La explicación de cada paquete y sus funcionalidades pueden encontrarse fácilmente en la Web. Existen muchos temas (themes) de Beamer, algunos preinstalados con el paquete y algunos que pueden descargarse desde repositorios con plantillas, uno de los temas más populares es [Warsaw](http://deic.uab.es/~iblanes/beamer_gallery/individual/Warsaw-default-default.html), que es el que usé para crear SimpleBeamer.tex. 
 
 Para comenzar la presentación solo hacen falta los comandos de latex:
 
@@ -62,13 +62,13 @@ Contenido de la lámina...
 \end{frame}
 ```
 
-Para crear la primera página que comúnmente lleva tu nombre, el título de la presentación, y algunas otras cosa adicionales, necesitamos los siguientes comandos:
+Para crear la primera lámina que comúnmente lleva tu nombre, el título de la presentación, y algunas otras cosa adicionales, necesitamos los siguientes comandos:
 
 ```latex
 \begin{frame}
 \title{Mi primera presentaci\'on con Beamer}
 \author{Tu nombre ac\'a}
-\date{}                   % Si se deja en blanco la fecha no saldrá
+\date{}                   % Si se deja en blanco la fecha no mostrará
 \maketitle                % Necesario para que se muestre el título, autor y fecha
 \end{frame}
 ```
@@ -116,7 +116,7 @@ $$
 \end{frame}
 ```
 
-Algo muy interesante y útil de Beamer son los bloques, particularmente útiles para resaltar código, frases de relevancia, hacer ejemplos. En [SimpleBeamer.tex](https://github.com/FavioVazquez/Presentacion_Beamer_Simple/blob/master/SimpleBeamer/SimpleBeamer.tex#L92) podemos encontrar ejemplos de estos bloques que se crean con los comandos:
+Algo muy interesante y útil de Beamer son los bloques, particularmente útiles para resaltar código, frases de relevancia, hacer ejemplos, etc. En [SimpleBeamer.tex](https://github.com/FavioVazquez/Presentacion_Beamer_Simple/blob/master/SimpleBeamer/SimpleBeamer.tex#L92) podemos encontrar ejemplos de estos bloques que se crean con los comandos:
 
 ```latex
 \begin{block}{Bloque}
