@@ -40,7 +40,11 @@ Luego se llaman a los paquetes que utilizaremos para renderizar, mejorar la form
 \usepackage{ragged2e}
 ```
 
-La explicación de cada paquete y sus funcionalidades pueden encontrarse fácilmente en la Web. Existen muchos temas (themes) de Beamer, algunos preinstalados con el paquete y algunos que pueden descargarse desde repositorios con plantillas, uno de los temas más populares es [Warsaw](http://deic.uab.es/~iblanes/beamer_gallery/individual/Warsaw-default-default.html), que es el que usé para crear SimpleBeamer.tex. 
+La explicación de cada paquete y sus funcionalidades pueden encontrarse fácilmente en la Web. Existen muchos temas (themes) de Beamer, algunos preinstalados con el paquete y algunos que pueden descargarse desde repositorios con plantillas, uno de los temas más populares es [Warsaw](http://deic.uab.es/~iblanes/beamer_gallery/individual/Warsaw-default-default.html), que es el que usé para crear SimpleBeamer.tex. Para hacer uso del tema solo debemos escribir:
+
+```latex
+\usetheme{Warsaw}
+```
 
 Para comenzar la presentación solo hacen falta los comandos de latex:
 
