@@ -17,6 +17,18 @@ http://miktex.org/download
 
 Y utilizando el Package Manager (Manejador de paquetes) de MikTex pueden instalar de forma sencilla Beamer, sugiero que utilicen la herramienta en modo administrador. Es muy probable que por defecto venga instalado Beamer, pero siempre es bueno validar.
 
+También puede utilizarse Kile en linux, y es fácil instalar paquetes con synaptic o cualquier otro manejador de paquetes, pero por defecto ya beamer viene instalado con Kile. Para instalar Kile en Ubuntu solo deben escribi los siguientes comandos en la consola:
+
+```
+sudo add-apt-repository ppa:kile/stable
+sudo apt-get update
+sudo apt-get install kile
+```
+
+Y ya tendrán instalado Kile y el compilador de TeX.
+
+Cualquier duda o si requieren más información pueden hacer un Issue, o si desean mejorar algo o encuentran un error no duden en hacer un Pull Request.
+
 -----------
 
 #SimpleBeamer.tex
